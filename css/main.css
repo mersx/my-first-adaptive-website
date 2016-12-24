@@ -1,0 +1,200 @@
+html {
+  font-size: 14px;
+}
+
+
+/* Пример от Криса Койлера h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+} */
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Обертка*/
+.content-wrap {
+  max-width: 73.14rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*Хедер*/
+.site-header {
+  flex-basis: 100%;
+  background: #373c3f;
+  color: white;
+  display: flex;
+}
+.site-header h1 {
+  display: none;
+  font-size: 1.09rem;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+}
+.site-nav ul a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  font-size: 1.07rem;
+  line-height: 1.733;
+  display: inline-block;
+}
+.site-nav ul a:hover{
+  background: rgba(0,0,0,0.35);
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-wrap:wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mobile-nav a {
+  color:white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background:rgba(0,0,0,1);
+  padding:20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
+}
+.mobile-nav > a {
+  font-size: 3.5rem;
+}
+/* блоки */
+.awesome-block {
+  flex-basis: 100%;
+  padding: 9.5em 0em 9.5em 5.71em;
+  background-image: linear-gradient(135deg, #19b4c6, #078aa4 );
+  position: relative;
+}
+.awesome-block a {
+  padding: 0.5em;
+  font-size: 2.57rem;
+  line-height: 0.73;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  position: absolute;
+  top:61.5%;
+  left: 71.89%;
+  color: white;
+}
+.awesome-block p {
+  padding: 0;
+}
+.awesome-block p:nth-of-type(1) {
+  font-size: 4.28rem;
+  color: white;
+}
+.awesome-block p:nth-of-type(2) {
+  margin-top: -1em;
+  font-size: 2.42rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.robin-block {
+  flex-basis: 100%;
+  height: 16.71rem;
+  background: #27212c;
+  display: flex;
+}
+.robin-text-wrapper {
+  flex-basis: 75%;
+  padding: 5rem 0 0 5.71em;
+}
+.robin-text-wrapper p {
+  font-size: 2.14rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.robin-bracket-block{
+  flex-basis: 25%;
+  background: #bc3183;
+  position: relative;
+}
+
+.robin-bracket-block::before{
+  content: ">";
+  font-size: 36px;
+  line-height: 0.73;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: white;
+}
+
+.gallery-wrap {
+  display: flex;
+}
+.gallery-block{
+  flex-basis: 33.33333333333333333333333333333333333%;
+  width: 24.35em;
+  height: 21em;
+}
+.gallery-bracket {
+  background: #5b0fa1;
+  position: relative;
+}
+.gallery-bracket::before{
+  content: ">";
+  font-size: 36px;
+  line-height: 0.73;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: white;
+}
+.gallery-block img {
+  width: 100%;
+  height: 100%;
+}
+
+.article-block {
+  flex-basis: 100%;
+
+  background: #ebebeb;
+}
+.article-block h1 {
+  width: 100%;
+  margin: 0;
+  padding: 1.9em 0 0 2.6em;
+  font-size: 2.14rem;
+  color: #088ca5;
+}
+.article-text-wrapper {
+  padding-left: 5.6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-block p {
+  line-height: 1.857;
+  flex-grow: 1;
+  flex-basis: 40%; /*28.57em*/
+}
+.article-block p:nth-last-of-type(2), .article-block p:nth-last-of-type(4) {
+  padding-right: 4.5em;
+}

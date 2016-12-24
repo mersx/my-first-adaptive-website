@@ -1,0 +1,118 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width : 980px) {
+  html { font-size: 14px; }
+
+  .awesome-block {
+    padding: 8.565em 0em 8.99em 5em;
+  }
+}
+@media only screen and (max-width : 640px) {
+  html { font-size: 10px; }
+
+  /*Шапка сайта*/
+  .site-header {
+    justify-content: space-between;
+  }
+  .site-header h1 {
+    display: block;
+    /*padding: 1.04em 0 0 1.81em;*/
+    padding: 1em 1.35em;
+    font-size: 2rem;
+    font-weight: normal;
+    color: white;
+    flex: 1 1 82.8%;
+  }
+
+  .site-nav {
+    display: none;
+  }
+  /*Выезжающее меню*/
+  .mobile-nav ul {
+    flex-wrap:wrap;
+  }
+  .mobile-nav li {
+    flex: 1 1 100%;
+  }
+  .mobile-nav a:hover {
+    background:rgba(0,0,0,0.35);
+  }
+  .toggleNav {
+    display: block;
+  }
+  .mobile-nav {
+    display: flex;
+    flex: 1 1 17.2%;
+    position: relative;
+  }
+  .mobile-nav ul {
+    display: none;
+  }
+    .mobile-nav ul.open {
+      display: flex;
+      position: absolute;
+      top: 8rem;
+      z-index: 1000;
+    }
+
+  .awesome-block {
+    padding: 4em 0em 8.99em 5em;
+  }
+  .awesome-block p:nth-of-type(1) {
+    font-size: 2.7rem;
+  }
+  .awesome-block p:nth-of-type(2) {
+    font-size: 1.5rem;
+  }
+
+  .gallery-wrap {
+    flex-direction: column;
+  }
+  .gallery-block {
+    width: 100%;
+    height: 53rem;
+  }
+  .gallery-bracket {
+    order: 0;
+  }
+  .gallery-bridge {
+    order: 1;
+  }
+  .gallery-girl {
+    order: 2;
+  }
+
+  .article-block p {
+    font-size: 1.5em;
+  }
+  .article-block p:nth-of-type(2), .article-block p:nth-of-type(4) {
+    display: none;
+  }
+}
+@media only screen and (max-width : 320px)  {
+  html { font-size: 8px; }
+
+  .awesome-block {
+    padding: 4em 0em 8.99em 5em;
+  }
+  .awesome-block p:nth-of-type(1) {
+    font-size: 2.7rem;
+  }
+  .awesome-block p:nth-of-type(2) {
+    font-size: 1.5rem;
+  }
+  .gallery-block {
+    height: 30em;
+  }
+  .article-block p {
+    font-size: 1rem;
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width: 980px) {
+}
+
+
+@media only screen and (min-width : 641px) and (max-width: 1199px) {
+}
